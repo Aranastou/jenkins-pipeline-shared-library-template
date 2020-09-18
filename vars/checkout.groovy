@@ -5,8 +5,6 @@ def git_scm(urls,branch){
 	}
 }
 
-def mvn_build(){
-	steps{
-		maven("-c clean compile")
-	}
+def mvn_build(args){
+	steps.sh "${steps.tool 'Maven'}/bin/mvn clean compile ${args}"
 }
