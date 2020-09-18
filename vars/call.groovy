@@ -7,6 +7,6 @@ def git_scm(urls,branch){
 
 def mvn_build(args){
 	node(){
-		steps.sh "/bin/mvn clean ${args}"
+		steps.sh "mvn clean ${args}"
 	}
 }
