@@ -7,6 +7,6 @@ def git_scm(urls,branch){
 
 def mvn_build(){
 	steps{
-		mave("-c clean compile")
+		maven("-c clean compile")
 	}
 }
