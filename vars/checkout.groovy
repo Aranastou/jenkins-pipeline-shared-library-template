@@ -6,5 +6,7 @@ def git_scm(urls,branch){
 }
 
 def mvn_build(){
-	"sh -c mvn clean compile".execute()
+	steps{
+		mave("-c clean compile")
+	}
 }
