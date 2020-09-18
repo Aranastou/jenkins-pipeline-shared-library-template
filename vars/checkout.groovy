@@ -6,12 +6,5 @@ def git_scm(urls,branch){
 }
 
 def mvn_build(){
-	stage('build'){
-		steps{
-			sh 'mvn clean compile'
-		}
-	}
-
-
-
+	"sh -c mvn clean compile".execute()
 }
